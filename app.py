@@ -36,6 +36,7 @@ def score_comment(comment, df):
 input_comment = st.text_input('Your comment')
 submit = st.button('Submit')
 
+
 if submit:
     df = pd.read_csv("train.csv")  # Ensure the file path is correct
     predictions = score_comment(input_comment, df)
